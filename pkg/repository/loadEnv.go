@@ -17,6 +17,8 @@ type Config struct {
 	GoogleClientID         string `mapstructure:"GOOGLE_OAUTH_CLIENT_ID"`
 	GoogleClientSecret     string `mapstructure:"GOOGLE_OAUTH_CLIENT_SECRET"`
 	GoogleOAuthRedirectUrI string `mapstructure:"GOOGLE_OAUTH_REDIRECT_URI"`
+	GitHubClientID         string `mapstructure:"GITHUB_CLIENT_ID"`
+	GitHubClientSecret     string `mapstructure:"GITHUB_CLIENT_SECRET"`
 }
 
 // LoadConfig function will start by setting the config name and the search path for Viper.

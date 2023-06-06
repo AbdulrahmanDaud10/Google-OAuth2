@@ -52,6 +52,7 @@ func DeserializeUser() gin.HandlerFunc {
 			return
 		}
 
+		// The function will lastly add the query result to the Gin context object via the ctx.Set() method and forward the request to subsequent middleware.
 		ctx.Set("currentUser", user)
 		ctx.Next()
 	}
